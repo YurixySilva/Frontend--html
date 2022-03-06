@@ -1,3 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedimdo</title>
+</head>
+<body>
+    <h1>Hacer pedido aquí</h1>
+    <form action="/pedido.js" id="form1" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="correo1">Ingrese correo</label><br>
+            <input type="email" id="correo1" name="correo1"><br><br>
+            <label for="tel1">Ingrese num de Teléfono</label><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+            <label for="dirección">Dirección</label><br>
+            <input type="text" id="dirección" name="dirección" maxlength="100">
+            <br><br>
+            
+    
 
-<!-- saved from url=(0069)file:///C:/Users/100056925/desktop/Launch%20x%20FrontEnd/Pemdido.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body></body></html>
+        <label for="numero1">Para cuántas personas el pastel</label><br>
+        <input type="number" id="numero1" name="numero1"><br><br>
+
+        <h2>Fecha en la que quiere su pastel</h2><br>
+        <input type="date" id="fecha1" name="fecha1"><br><br>
+        <h2>Descripción del pastel</h2><br>
+
+        <label for="Descripción del pastel">De una descripción general de la temática del pastel</label><br>
+        <input type="text" id="Descripción del pastel" name="Descripción del pastel" placeholder="Descripción del pastel"></imput>
+        <br><br>
+    
+
+        <h2>Seleccione sabor del pastel</h2><br>
+        <input type="radio" id="Chocolacteo" name="Bizcocho" value="chocolacteo">
+        <label for="Chocolacteo">Chocolacteo</label><br>
+        <input type="radio" id="Vaini-luna" name="Bizcocho" value="Vaini-luna">
+        <label for="vaini-luna">Vaini-luna</label><br>
+        <input type="radio" id="Fre-saturno" name="Bizcocho" value="Fre-saturno">
+        <label for="Fre-saturno">Fre-saturno</label><br>
+        <input type="radio" id="Nuez-tación espacial" name="Bizcocho" value="Nuez-tación espacial">
+        <label for="Nuez-tación espacial">Nuez-tación espacial</label><br>
+        <input type="radio" id="Plata-neta" name="Bizcocho" value="Plata-neta">
+        <label for="Plata-neta">Plata-neta</label><br>
+        <input type="radio" id="Zarzamora con ques-teroide" name="Bizcocho" value="Zarzamora con ques-teroide">
+        <label for="Zarzamora con ques-teroide">Zarzamora con queste-roide</label><br>
+        <input type="radio" id="Lima-limón fugaz" name="Bizcocho" value="Lima-limón fugaz">
+        <label for="Lima-limón fugaz">Lima-limón fugaz</label><br>
+        <input type="radio" id="Naranja collision" name="Bizcocho" value="Naranja collision">
+        <label for="Naranja collision">Naranja collision</label><br>
+        <input type="radio" id="Café solar" name="Bizcocho" value="Café solar">
+        <label for="Café solar">Café solar</label><br>
+        <input type="radio" id="Yoguravity" name="Bizcocho" value="Yoguravity">
+        <label for="Yoguravity">Yoguravity</label><br>
+        <input type="radio" id="Black zana-hole" name="Bizcocho" value="Black zana-hole">
+        <label for="Black zana-hole">Black zana-hole</label><br>
+        <input type="radio" id="Interestellar rompope" name="Bizcocho" value="Interestellar rompope">
+        <label for="Interestellar rompope">Interestellar rompope</label><br>
+        <br><br>
+
+        <h2>Seleccione Cobertura</h2><br>
+        <select name="Cobertura " id="Cobertura">
+            <option value="Mantequilla color blanco">Mantequilla color blanco</option>
+            <option value="Mantequilla saborizada vainilla">Mantequilla saborizada vainilla/option>
+            <option value="Mantequilla fresa">Mantequilla fresa</option>
+            <option value="Mantequilla chocolate">Mantequilla chocolate</option>
+            <option value="Cobertura de queso crema">Cobertura de queso crema</option>
+            <option value="Cobertura de Ganache de chocolate (amargo, de leche o semiamargo)">Cobertura de Ganache de chocolate (amargo, de leche o semiamargo)</option>
+            <option value="Mantequilla sabor cookies and cream">Mantequilla sabor cookies and cream</option>
+            <option value="Cobertura sabor yogurth con frutos rojos">Cobertura sabor yogurth con frutos rojos</option>
+            <option value="glaseado tipo espejo">glaseado tipo espejo</option>
+            <option value="Cobertura sabor mazapan">Cobertura sabor mazapan</option>
+        
+        </select> 
+
+        <h>¿Qué color quiere que lleve el pastel?</h>
+        <select name="Color" id="color">
+            <option value="rojo"> rojo</option>
+            <option value="Blanco"> blanco</option>
+            <option value="verde"> verde</option>
+            <option value="negro"> negro</option>
+            <option value="azul"> azul</option>
+            <option value="Rosa"> rosa</option>
+            <option value="tonos neutros"> tonos neutros</option>
+            <option value="colores galaxia"> colores galaxia</option>
+            <option value="tonos cálidos"> tonos cálidos</option>
+            <option value="otro"> otro</option>
+        </select>
+        <br><br> 
+        <h3> Si escogiste otro, por favor, ingrese aquí su opción:</h3>
+        <label for="Opción cliente">Ingrese opcióne</label><br>
+        <input type="text" id="Opción cliente" name="Opción cliente" placeholder="Opción cliente"></imput><br><br>
+        <h2>Seleccione Relleno -máximo 2-</h2><br>
+        <h3>Relleno1</h3>
+        <select name="Relleno1 " id="Relleno1">
+            <option value="fresas">fresas</option>
+            <option value="ganache chocolate">ganache chocolate</option>
+            <option value="Cremoso de queso">Cremoso de queso</option>
+            <option value="Crema pastelera sabor leche de cereal">Crema pastelera sabor leche de cereal</option>
+            <option value="Curd de limón">Curd de limón</option>
+            <option value="Higo c/arándano">Higo c/arándano</option>
+            <option value="Manzana-canela">Manzana-canela</option>
+            <option value="Plátano c/crema">Plátano c/crema</option>
+            <option value="Almendras tostadas">Almendras tostadas</option>
+            <option value="Horchata de arroz">Horchata de arroz</option>
+        
+        </select> 
+        <h3>Relleno2</h3>
+        <select name="Relleno2 " id="Relleno2">
+            <option value="fresas">fresas</option>
+            <option value="ganache chocolate">ganache chocolate</option>
+            <option value="Cremoso de queso">Cremoso de queso</option>
+            <option value="Crema pastelera sabor leche de cereal">Crema pastelera sabor leche de cereal</option>
+            <option value="Curd de limón">Curd de limón</option>
+            <option value="Higo c/arándano">Higo c/arándano</option>
+            <option value="Manzana-canela">Manzana-canela</option>
+            <option value="Plátano c/crema">Plátano c/crema</option>
+            <option value="Almendras tostadas">Almendras tostadas</option>
+            <option value="Horchata de arroz">Horchata de arroz</option>
+        
+        </select> 
+        <h2>Seleccione decoración</h2><br>
+        <input type="checkbox" id="deco1" name="deco1" value="Nombre en figuritas de papel/cartón">
+        <label for="deco1">Nombre en figuritas de papel/cartón</label><br>
+        <input type="checkbox" id="deco2" name="deco2" value="Hojas de oro">
+        <label for="deco2">Hojas de oro</label><br>
+        <input type="checkbox" id="deco3" name="deco3" value="Flores naturales/mantequilla">
+        <label for="deco3">Flores naturales</label><br>
+        <input type="checkbox" id="deco4" name="deco4" value="Macaroons">
+        <label for="deco4">Macaroons</label><br>
+        <input type="checkbox" id="deco5" name="deco5" value="Figuras de fondant">
+        <label for="deco5">Figuras de fondant</label><br>
+        <input type="checkbox" id="deco6" name="deco6" value="Isomalt">
+        <label for="deco6">Isomalt</label><br>
+        <input type="checkbox" id="deco7" name="deco7" value="Galletas">
+        <label for="deco7">Galletas</label><br><br>
+
+        <h3>Decoración extra</h3>
+        <select name="Deco extra " id="Deco extra">
+            <option value="Nombre madera/papel">Nombre madera/papel</option>
+            <option value="Hojas de oro">Hojas de oro</option>
+            <option value="Flores">Flores</option>
+            <option value="Macaroons">Macaroons</option>
+            <option value="Figuras fondant">Figuras fondant</option>
+            <option value="Isomalt">Isomalt</option>
+            <option value="Galletas">Galletas</option><br>
+        </select> 
+
+        <h3> Si tienes alguna indicación extra para el pastel y su decoración, indica aquí:</h3>
+        <label for="Extras">Extras</label><br>
+        <input type="text" id="Extras  " name="Extras" placeholder="Extras"></imput><br><br>
+        <br><br>
+        <input type="reset"> 
+        <input type="submit">
+
+        
+
+    </form>
+
+    </body>
+</html>
